@@ -4,6 +4,11 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import styled from "styled-components"
+
+const StyledLink = styled(Link)`
+  color: indianred;
+`
 
 const IndexPage = () => (
   <Layout>
@@ -14,7 +19,7 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <StyledLink to="/page-2/">Go to page 2</StyledLink>
   </Layout>
 )
 
