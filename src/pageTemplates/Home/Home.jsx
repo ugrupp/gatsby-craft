@@ -1,17 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../../components/layout"
+import LocalizedLink from "../../components/LocalizedLink"
+import styled from "styled-components"
 import Image from "../../components/image"
 import SEO from "../../components/seo"
-import styled from "styled-components"
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(LocalizedLink)`
   color: indianred;
 `
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
@@ -20,7 +18,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <StyledLink to="/services/">Go to services pages</StyledLink>
-  </Layout>
+  </>
 )
 
 export default IndexPage

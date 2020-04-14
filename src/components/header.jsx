@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import LocalizedLink from "./LocalizedLink"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
+        <LocalizedLink
           to="/"
           style={{
             color: `white`,
@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
-        </Link>
+        </LocalizedLink>
       </h1>
     </div>
   </HeaderWrapper>
